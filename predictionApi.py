@@ -6,7 +6,6 @@ import datetime
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
-
 origins = [
     "https://react-prediction-graphics.herokuapp.com"
 ]
@@ -39,8 +38,7 @@ def predictionLive(numPrediction: int):
     predictions = []
     dates = []
 
-    ahora = datetime.datetime.strptime(df[-1:].index[0], '%Y-%m-%d %H:%M:%S')
-
+    now = datetime.datetime.strptime(df[-1:].index[0], '%Y-%m-%d %H:%M:%S')
     train = df['Close'].values
     history = [x for x in train]
 
@@ -57,9 +55,9 @@ def predictionLive(numPrediction: int):
         predictions.append(predict)
         history.append(output)
 
-        en_una_hora = ahora + datetime.timedelta(hours=1)
+        en_una_hora = now + datetime.timedelta(hours=1)
         dates.append(en_una_hora)
-        ahora = en_una_hora
+        now = en_una_hora
 
     data = pd.DataFrame(list(zip(predictions, dates)), columns=['Close', "date"])
     data = data.set_index("date")
