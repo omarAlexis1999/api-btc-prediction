@@ -7,7 +7,8 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 origins = [
-    "https://react-prediction-graphics.herokuapp.com"
+    "https://react-prediction-graphics.herokuapp.com",
+    "http://localhost:3000"
 ]
 
 app.add_middleware(
