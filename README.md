@@ -31,4 +31,4 @@ This will run the application on port 8000 on localhost 127.0.0.1.
 
 ## Authors
 
-Project Created by **Omar Sanmartin and Johanna Montaño**
+Project Created by **Omar Sanmartin and Johanna P. Montaño**
