@@ -32,7 +32,7 @@ def getDataBtc():
 
 @app.post("/get-prediction")
 def getPrediction(num_times: int):
-    return predictionWithModel(num_times)
+    return predictionLive(num_times)
 
 
 def predictionLive(numPrediction: int):
