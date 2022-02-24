@@ -2,7 +2,9 @@
 The api has calls that consume a machine learning model trained with the Python statsmodels library for time series forecasting.
 To predict the price of the Bitcoin cryptocurrency in a period of hours.
 
-The app is implemented in Heroku in the following resource https://api-btc-prediction.herokuapp.com/docs 
+The app is implemented in Heroku in the following resource https://api-btc-prediction.herokuapp.com/docs.
+
+As an example of api consumption implementation is the following project: https://github.com/omarAlexis1999/fronted-btc-prediction-.git
 
 ## Instalation
 
@@ -29,4 +31,4 @@ This will run the application on port 8000 on localhost 127.0.0.1.
 
 ## Authors
 
-Project Created by **Omar Sanmartin and Johanna Montaño**
+Project Created by **Omar Sanmartin and Johanna P. Montaño**
